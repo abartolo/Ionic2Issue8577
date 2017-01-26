@@ -1,0 +1,42 @@
+page-home {
+
+  #rg-title .toolbar-title{
+    text-align: left;
+    display: flex;
+  }
+
+  .rg-teamName{
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .rg-teamScore{
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  #rg-scoreDivider{
+    font-size: 24px;
+  }
+
+  #rg-gameScoreContainer{
+    width: 50%;
+    color: #ffffff;
+  }
+
+  #rg-periodClockContainer{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  #rg-periodClockContainer ion-icon{
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+}

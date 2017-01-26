@@ -1,0 +1,38 @@
+<!-- Toolbar-->
+<ion-header>
+  <ion-toolbar color="primary" mode="ios">
+
+    <button ion-button (click)="showOptionsPopover($event)">
+      <ion-icon name="more"></ion-icon>
+    </button>
+
+    <ion-title id="rg-title">
+      <!-- Score -->
+      <div id="rg-gameScoreContainer" class="sc-display-flex">
+        <span class="rg-teamName">{{coachTeamName}}</span>
+        <span class="rg-teamScore">{{teamScore}}</span>
+        <span id="rg-scoreDivider">-</span>
+        <span class="rg-teamScore">{{oppScore}}</span>
+        <span class="rg-teamName">{{oppTeamName}}</span>
+      </div>
+      <!-- Timer -->
+      <div id="rg-periodClockContainer" tappable (click)="testing($event)">
+        <span id="rg-period">{{periodUI}}</span>
+        <ion-icon name="md-time"></ion-icon>
+        <span id="rg-clock">{{gameClockUI}}</span>
+      </div>
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Some HTML -->
+  <h2>Issue #8577!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs, update any existing page or create new pages.
+  </p>
+</ion-content>
